@@ -1,155 +1,265 @@
+<div align="center">
+
 # ☕ Maven Roasters: Coffee Shop Sales Analytics
 
-## 📌 Problem Statement
+### End-to-End Sales Analysis using Python, Pandas & Data Visualization
 
-Maven Roasters is a coffee shop chain operating across three locations in New York City. The business wants to understand customer purchasing behavior, identify peak business hours, analyze product performance, and uncover sales trends to improve staffing, inventory management, and promotional strategies.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-4C72B0?style=for-the-badge)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter)
 
----
-
-## 🎯 Research Questions
-
-1. How have Maven Roasters sales trended over time?
-2. Which days of the week tend to be busiest?
-3. What times of day are most popular?
-4. Does the same trend hold across all store locations?
-5. Which products are sold most and least often?
-6. Which products generate the highest revenue?
+</div>
 
 ---
 
-## 📊 Dataset
+# 📖 Project Overview
 
-* **Source:** Maven Analytics – Coffee Shop Sales Dataset
-* **File Used:** `Coffee Shop Sales.xlsx`
-* **Records:** 149,116 Transactions
-* **Time Period:** January 2023 – June 2023
-* **Store Locations:**
+This project analyzes **149,116 retail transactions** from Maven Roasters, a coffee shop chain operating across three locations in New York City.
 
-  * Astoria
-  * Hell's Kitchen
-  * Lower Manhattan
+Using **Python**, **Pandas**, **NumPy**, **Matplotlib**, and **Seaborn**, the project transforms raw sales data into actionable business insights by exploring customer purchasing behavior, sales trends, peak business hours, and product performance.
+
+The objective is to support data-driven decision-making for inventory management, staffing, and marketing strategies.
 
 ---
 
-## 🛠️ Tools Used
+# 📌 Project Highlights
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Matplotlib**
-* **Seaborn**
-* **Jupyter Notebook**
-
----
-
-## 🧹 Data Preparation
-
-The following preprocessing steps were performed:
-
-* Checked for missing values
-* Removed duplicate records
-* Converted transaction dates into datetime format
-* Created new columns:
-
-  * Sales
-  * Month
-  * Day of Week
-  * Hour
-  * Time of Day (Morning, Afternoon, Evening)
+- 📊 Performed end-to-end Exploratory Data Analysis (EDA)
+- 🧹 Cleaned and transformed transactional data
+- 📈 Created professional business visualizations
+- ☕ Analyzed customer purchasing patterns
+- 💰 Identified top revenue-generating products
+- 📅 Examined monthly and weekly sales trends
+- ⏰ Identified peak customer traffic hours
+- 💡 Generated business recommendations
 
 ---
 
-# 📈 Analysis & Insights
+# 📊 Dataset Information
 
-## 📈 Monthly Sales Trend
-
-* Sales increased steadily from **January ($81.7K)** to **June ($166.5K)**.
-* **February ($76.1K)** recorded the lowest monthly sales.
-* **June ($166.5K)** achieved the highest monthly revenue.
-* The business experienced strong sales growth during the six-month period.
-
----
-
-## 📅 Sales by Day of Week
-
-* **Monday** and **Friday** generated the highest sales.
-* **Saturday** recorded the lowest sales.
-* Sales remained relatively consistent throughout the week.
+| Attribute | Details |
+|-----------|----------|
+| Source | Maven Analytics Data Playground |
+| Dataset | Coffee Shop Sales |
+| Records | **149,116 Transactions** |
+| Time Period | January 2023 – June 2023 |
+| Locations | Astoria, Hell's Kitchen, Lower Manhattan |
 
 ---
 
-## ⏰ Customer Activity by Hour
+# ❓ Business Questions Addressed
 
-* Customer traffic increased rapidly during the morning.
-* **10 AM** recorded the highest number of transactions.
-* Transaction volume gradually declined after the morning rush.
+- How have sales changed over time?
+- Which weekdays generate the highest sales?
+- What time of day attracts the most customers?
+- Which locations experience the highest customer traffic?
+- Which products contribute the most revenue?
+- Which products have the lowest sales performance?
+
+---
+
+# 🛠️ Technologies Used
+
+| Category | Technology |
+|-----------|------------|
+| Programming Language | Python |
+| Data Analysis | Pandas |
+| Numerical Computing | NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Development Environment | Jupyter Notebook |
+
+---
+
+# 🧹 Data Preparation
+
+The following preprocessing steps were completed before analysis:
+
+- Checked and handled missing values
+- Removed duplicate records
+- Converted transaction dates into datetime format
+- Calculated total sales
+- Created Month, Day, Hour, and Time of Day features
+- Prepared data for visualization and business analysis
+
+---
+
+# 🔄 Analysis Workflow
+
+```text
+Raw Sales Dataset
+        │
+        ▼
+ Data Cleaning
+        │
+        ▼
+ Feature Engineering
+        │
+        ▼
+ Exploratory Data Analysis
+        │
+        ▼
+ Business Visualizations
+        │
+        ▼
+ Business Insights
+        │
+        ▼
+ Recommendations
+```
+
+---
+
+# 📈 Visualizations
+
+## 📅 Monthly Sales Trend
+
+<img src="visualizations/Monthly Sales Trend.png" width="850">
+
+**Insights**
+
+- Revenue increased consistently from January to June.
+- June recorded the highest monthly sales.
+- February generated the lowest revenue.
+
+---
+
+## 📆 Sales by Day of Week
+
+<img src="visualizations/Sales by Day of Week.png" width="850">
+
+**Insights**
+
+- Monday and Friday generated the highest revenue.
+- Saturday recorded comparatively lower sales.
+- Customer demand remained stable throughout the week.
+
+---
+
+## ⏰ Transactions by Hour
+
+<img src="visualizations/Transactions by Hour of Day.png" width="850">
+
+**Insights**
+
+- Customer traffic peaked around **10 AM**.
+- Morning hours consistently attracted the largest number of customers.
+- Transaction volume gradually declined after midday.
 
 ---
 
 ## 🌅 Revenue by Time of Day
 
-* **Morning:** ~$388K (Highest)
-* **Afternoon:** ~$205K
-* **Evening:** ~$106K (Lowest)
+<img src="visualizations/Total Sales by Time of Day.png" width="850">
 
-Morning generated significantly more revenue than the other time periods.
+**Insights**
 
----
-
-## ☕ Product Performance
-
-### Highest Revenue Products
-
-The highest revenue was generated by premium coffee and tea products, with **Coffee** and **Tea** contributing the largest share of overall revenue.
+- Morning generated the highest revenue.
+- Afternoon sales remained moderate.
+- Evening contributed the least revenue.
 
 ---
 
-## 🔍 Key Insights
+## ☕ Top Revenue Generating Products
 
-* 📈 Sales increased consistently from January to June.
-* 📅 Monday and Friday were the busiest sales days.
-* ⏰ Around **10 AM** was the busiest hour across all locations.
-* 🏪 Astoria, Hell's Kitchen, and Lower Manhattan all showed peak customer activity at **10 AM**.
-* ☕ Coffee and Tea products generated the highest revenue.
-* 📦 Green Beans, Green Tea, and House Blend Beans were the least sold products.
+<img src="visualizations/Top 10 Products by Revenue.png" width="850">
 
----
+**Insights**
 
-## 💡 Business Recommendations
-
-| Recommendation                                    | Reason                                                                  |
-| ------------------------------------------------- | ----------------------------------------------------------------------- |
-| Increase staffing during morning hours            | Customer traffic peaks around **10 AM**                                 |
-| Focus marketing on Coffee and Tea products        | They contribute the highest revenue                                     |
-| Introduce promotions during afternoon and evening | These periods have lower sales than mornings                            |
-| Review inventory for low-demand products          | Green Beans, Green Tea, and House Blend Beans have relatively low sales |
-| Continue monitoring monthly sales trends          | Helps forecast demand and optimize stock levels                         |
+- Coffee and Tea products generated the highest revenue.
+- Premium beverages consistently outperformed other categories.
 
 ---
 
-## 📁 Project Structure
+# 📊 Key Business Insights
+
+- Sales increased steadily throughout the six-month period.
+- Morning hours represented the busiest business period.
+- Around **10 AM** recorded peak customer activity.
+- Coffee and Tea contributed the largest share of total revenue.
+- Astoria, Hell's Kitchen, and Lower Manhattan showed similar purchasing trends.
+- Low-performing products present opportunities for promotional campaigns.
+
+---
+
+# 💼 Business Recommendations
+
+| Recommendation | Business Value |
+|---------------|----------------|
+| Increase staffing during morning hours | Reduce waiting time during peak demand |
+| Focus marketing campaigns on Coffee and Tea | Maximize revenue from best-selling products |
+| Launch promotions during afternoon and evening | Improve sales during off-peak periods |
+| Optimize inventory for low-demand products | Reduce unnecessary stock costs |
+| Monitor monthly sales trends | Improve forecasting and demand planning |
+
+---
+
+# 💻 Skills Demonstrated
+
+- Python Programming
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis (EDA)
+- Business Intelligence
+- Data Visualization
+- Business Storytelling
+
+---
+
+# 📁 Repository Structure
 
 ```text
-Coffee Shop Sales Analysis/
+Coffee-Shop-Sales-Analysis/
 │
-├── Coffee Sales.ipynb
-├── Coffee Shop Sales.xlsx
-├── visualizations/
-│   ├── Monthly Sales Trend.png
-│   ├── Sales by Day of Week.png
-│   ├── Top 10 Products by Revenue.png
-│   ├── Total Sales by Time of Day.png
-│   └── Transactions by Hour of Day.png
+├── Coffee_Shop_Sales_Analysis.ipynb
+├── Coffee_Shop_Sales_Dataset.xlsx
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+│
+└── visualizations/
+    ├── Monthly Sales Trend.png
+    ├── Sales by Day of Week.png
+    ├── Transactions by Hour of Day.png
+    ├── Total Sales by Time of Day.png
+    └── Top 10 Products by Revenue.png
 ```
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Sammeta Satya Kartikeya**
+**Sammeta Satya Karthikeya**
 
-**B.Tech – Computer Science (Data Science)**
+📧 Email: Karthik3149@gmail.com
 
-**CMR College of Engineering & Technology**
+🔗 LinkedIn: [Sammeta Satya Karthikeya](https://www.linkedin.com/in/satyakartikeya)
+
+💻 GitHub: [kartikeya3149](https://github.com/kartikeya3149)
+
+---
+
+# 📋 Project Information
+
+| Category | Details |
+|----------|----------|
+| Project Type | Exploratory Data Analysis |
+| Domain | Retail Sales Analytics |
+| Programming Language | Python |
+| Dataset | Maven Roasters Coffee Shop Sales |
+| Records | 149,116 Transactions |
+| Visualizations | Matplotlib & Seaborn |
+| Notebook | Jupyter |
+
+---
+
+## ⭐ Support
+
+If you found this project useful, please consider giving this repository a **Star ⭐**.
+
+Thank you for visiting!
